@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Inmuebles</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="contenedor">
+        <h1>Calculadora de Inmuebles</h1>
+        <div class="container">   
+            <div class="venta">
+                <form id="propertyForm">
+                    <div class="form-group">
+                        <label for="salePrice">Precio de Venta:</label>
+                        <input type="number" id="salePrice" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="saleInmobiliario">Porcentaje Inmobiliaria:</label>
+                        <input type="number" value="3" id="saleInmobiliario" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="saleEscribania">Porcentaje Escribania:</label>
+                        <input type="number" value="3" id="saleEscribania" required>
+                    </div>   
+                </form>
+            </div> 
+            <div class="compra">
+                <form id="propertyForm">
+                    <div class="form-group">
+                        <label for="purchasePrice">Precio de Compra:</label>
+                        <input type="number" id="purchasePrice" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="purchaseInmobiliario">Porcentaje Inmobiliaria:</label>
+                        <input type="number" value="2" id="purchaseInmobiliario" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="purchaseEscribania">Porcentaje Escribania:</label>
+                        <input type="number" value="3" id="purchaseEscribania" required>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <button type="button" onclick="calculateCosts()">Calcular</button>
+        <div class="results" id="results"></div>
+    </div>
+    <script src="calculadora.js"></script>
+</body>
+</html>
